@@ -29,8 +29,8 @@ public class FilmManagerTest {
 
         manager.findLast();
 
-        String[] expected = {"film 1", "film 2", "film 3", "film 4", "film 5"};
-        String[] actual = manager.findAll();
+        String[] expected = {"film 5", "film 4", "film 3", "film 2", "film 1"};
+        String[] actual = manager.findLast();
 
         Assertions.assertArrayEquals(expected, actual);
     }
